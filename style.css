@@ -1021,7 +1021,7 @@ a.goldlink,
   display: flex;
   flex-direction: column;
   gap: .5em;
-  padding: .7em;
+  padding: .4em;
   font-size: .9em;
   padding-top: .5em;
 }
@@ -1054,4 +1054,20 @@ a.goldlink,
 .buttons-niveau a {
   font-weight: 500;
   padding: .5em 1em;
+}
+
+a {
+  color: inherit;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+a:not(.button):not(.close) {
+  text-decoration: underline 0.1em rgba(0, 0, 0, 0);
+  transition: text-decoration-color 300ms;
+}
+
+a:hover:not(.button):not(.close) {
+  text-decoration-color: inherit;
+  transition: text-decoration-color 300ms;
 }
